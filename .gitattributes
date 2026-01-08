@@ -2,3 +2,8 @@
 .github/crush-schema.json linguist-generated=true
 internal/agent/hyper/provider.json linguist-generated=true
 internal/agent/testdata/**/*.yaml -diff linguist-generated=true
+
+# Merge strategy for Claude Code support
+# Always keep our Claude Code changes when merging from upstream
+internal/oauth/claude/** merge=ours
+internal/tui/components/dialogs/claude/** merge=ours
